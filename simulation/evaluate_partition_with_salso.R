@@ -1,5 +1,5 @@
-library(salso)
 install.packages("salso")
+library(salso)
 setwd("C:/Code/sot-gmm/")
 methods <- c("MixSW", "SMixW", "SW")
 loss_functions <- list(
