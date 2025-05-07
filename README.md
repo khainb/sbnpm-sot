@@ -104,7 +104,7 @@ Please update directory path at line 3 in [summarizing_partition_with_salso.R](f
 
 
 ```
-cd simulation
+cd faithful
 python evaluate_density.py
 python plotting_density.py
 python evaluate_mixing_measures.py
