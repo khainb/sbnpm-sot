@@ -45,7 +45,7 @@ Code is in the folder [simulation](simulation).
 * [evaluate_mixing_measures.py](simulation%2Fevaluate_mixing_measures.py): This file evaluates the mixing measure summarization from SW, Mix-SW, and SMix-W.
 * [plotting_density.py](simulation%2Fplotting_density.py): This file plots the density summarization and partition summarization figures.
 
-Please update directory path at line 2 in [summarizing_partition_with_salso.R](simulation%2Fsummarizing_partition_with_salso.R) and [evaluate_partition_with_salso.R](simulation%2Fevaluate_partition_with_salso.R).
+Please update directory path at line 3 in [summarizing_partition_with_salso.R](simulation%2Fsummarizing_partition_with_salso.R) and [evaluate_partition_with_salso.R](simulation%2Fevaluate_partition_with_salso.R).
 
 For evaluation from provided prerun summarization:
 ```
@@ -85,7 +85,7 @@ Code is in the folder [faithful](faithful).
 * [evaluate_density.py](simulation%2Fevaluate_density.py): This file evaluates the density summarization from all methods.
 * [plotting_density.py](simulation%2Fplotting_density.py): This file plots the density summarization and partition summarization figures.
 
-Please update directory path at line 2 in [summarizing_partition_with_salso.R](faithful%2Fsummarizing_partition_with_salso.R) and [evaluate_partition_with_salso.R](faithful%2Fevaluate_partition_with_salso.R).
+Please update directory path at line 3 in [summarizing_partition_with_salso.R](faithful%2Fsummarizing_partition_with_salso.R) and [evaluate_partition_with_salso.R](faithful%2Fevaluate_partition_with_salso.R).
 
 For evaluation from provided prerun summarization:
 ```

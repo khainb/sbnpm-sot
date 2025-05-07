@@ -1,5 +1,6 @@
 library(salso)
-
+install.packages(salso)
+setwd("C:/Code/sot-gmm/")
 # Define loss functions
 loss_functions <- list(
   "Binder" = binder(),
@@ -27,15 +28,15 @@ for (rep in 0:(num_repeats - 1)) {
   #cat("Processing repetition:", rep, "\n")
 
   # Load data
-  draws_path <- paste0("C:/Code/SOT-MGs/simulated_data/saved/Zs_n200_K100_repeat", rep, ".txt")
-  label_path <- paste0("C:/Code/SOT-MGs/simulated_data/saved/label_n200_repeat", rep, ".txt")
+  draws_path <- paste0("simulation/saved/Zs_n200_K100_repeat", rep, ".txt")
+  label_path <- paste0("simulation/saved/label_n200_repeat", rep, ".txt")
   draws <- as.matrix(read.csv(draws_path, header = FALSE))
   label <- as.vector(as.matrix(read.csv(label_path, header = FALSE)))
 
   for (est_loss in names(loss_functions)) {
     loss_function <- loss_functions[[est_loss]]
     estimated_partition <- salso(draws, loss = loss_function, nRuns = 1, nCores = 1)
-    partition_path <- paste0("C:/Code/SOT-MGs/simulated_data/saved/", est_loss, "_n200_repeat", rep, ".csv")
+    partition_path <- paste0("simulation/saved/", est_loss, "_n200_repeat", rep, ".csv")
     write.table(estimated_partition, file = partition_path, sep = ",", row.names = FALSE, col.names = FALSE, quote = FALSE)
     # Track the number of unique clusters
     unique_counts[[est_loss]] <- c(unique_counts[[est_loss]], length(unique(estimated_partition)))

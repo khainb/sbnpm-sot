@@ -1,4 +1,5 @@
 library(salso)
+install.packages(salso)
 setwd("C:/Code/sot-gmm/")
 methods <- c("SW","MixSW", "SMixW" )
 loss_functions <- list(
@@ -25,8 +26,8 @@ for (method in methods) {
   #cat("Processing repetition:", rep, "\n")
 
   # Load posterior draws and ground truth
-  draws_path <- paste0("C:/Code/SOT-MGs/faithful_dataset/saved/Zs.txt")
-  method_path <- paste0("C:/Code/SOT-MGs/faithful_dataset/saved/Zs_", method, "_L100.txt")
+  draws_path <- paste0("faithful/saved/Zs.txt")
+  method_path <- paste0("faithful/saved/Zs_", method, "_L100.txt")
 
   draws <- as.matrix(read.csv(draws_path, header = FALSE))
   Z <- as.vector(as.matrix(read.csv(method_path, header = FALSE)))

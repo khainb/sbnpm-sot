@@ -1,5 +1,6 @@
 library(salso)
-
+install.packages(salso)
+setwd("C:/Code/sot-gmm/")
 methods <- c("MixSW", "SMixW", "SW")
 loss_functions <- list(
   "Binder" = binder(),
@@ -26,9 +27,9 @@ for (method in methods) {
     #cat("Processing repetition:", rep, "\n")
 
     # Load posterior draws and ground truth
-    draws_path <- paste0("C:/Code/SOT-MGs/simulated_data/saved/Zs_n200_K100_repeat", rep, ".txt")
-    label_path <- paste0("C:/Code/SOT-MGs/simulated_data/saved/label_n200_repeat", rep, ".txt")
-    method_path <- paste0("C:/Code/SOT-MGs/simulated_data/saved/Zs_", method, "_n200_L100_K100_repeat", rep, ".txt")
+    draws_path <- paste0("simulation/saved/Zs_n200_K100_repeat", rep, ".txt")
+    label_path <- paste0("simulation/saved/label_n200_repeat", rep, ".txt")
+    method_path <- paste0("simulation/saved/Zs_", method, "_n200_L100_K100_repeat", rep, ".txt")
 
     draws <- as.matrix(read.csv(draws_path, header = FALSE))
     label <- as.vector(as.matrix(read.csv(label_path, header = FALSE)))
