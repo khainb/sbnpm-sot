@@ -11,7 +11,7 @@ These packages were used to produce results, however, their mentioned specific v
 pip install torch==2.5.1 torchvision==0.20.1 torchaudio==2.5.1 --index-url https://download.pytorch.org/whl/cu124
 pip install -r requirements.txt
 ```
-If the above versions of packages are not available for your system.
+If the above versions of packages are not available for your system, use:
 ```
 pip install torch torchvision torchaudio
 pip install -r requirements_general.txt
