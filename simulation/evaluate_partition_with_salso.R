@@ -1,4 +1,4 @@
-install.packages("salso")
+#install.packages("salso")
 library(salso)
 setwd("C:/Code/sot-gmm/")
 methods <- c("MixSW", "SMixW", "SW")
@@ -7,6 +7,7 @@ loss_functions <- list(
   "VI" = VI(),
   "omARI" = omARI()
 )
+set.seed(2024)
 num_repeats <- 25
 
 for (method in methods) {
