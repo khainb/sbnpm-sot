@@ -1,4 +1,4 @@
-install.packages("salso")
+#install.packages("salso")
 library(salso)
 setwd("C:/Code/sot-gmm/")
 # Define loss functions
@@ -7,7 +7,7 @@ loss_functions <- list(
   "VI" = VI(),
   "omARI" = omARI()
 )
-
+set.seed(2024)
 
 # Initialize structures to store evaluation scores and unique cluster counts
 all_evaluations <- list()

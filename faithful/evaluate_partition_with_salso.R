@@ -1,4 +1,4 @@
-install.packages("salso")
+#install.packages("salso")
 library(salso)
 setwd("C:/Code/sot-gmm/")
 methods <- c("SW","MixSW", "SMixW" )
@@ -7,7 +7,7 @@ loss_functions <- list(
   "VI" = VI(),
   "omARI" = omARI()
 )
-
+set.seed(2024)
 for (method in methods) {
   cat("\n=== Evaluating Method:", method, "===\n")
 

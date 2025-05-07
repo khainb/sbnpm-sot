@@ -3,7 +3,7 @@ Official implementation for paper: Summarizing Bayesian Nonparametric Mixture Po
 
 # Requirements
 
-[Python 3.11.4 (with pip)](https://www.python.org/downloads/release/python-3114/)  and [R 4.3.1](https://cran.r-project.org/bin/windows/base/old/4.3.2/) with RStudio were used to produce results, however, they are not strictly required for running the code.
+[Python 3.11.4 (with pip)](https://www.python.org/downloads/release/python-3114/)  and [R 4.3.1](https://cran.r-project.org/bin/windows/base/old/4.3.1/) with RStudio were used to produce results, however, they are not strictly required for running the code.
 
 ## Python packages
 These packages were used to produce results, however, their mentioned specific version are not strictly required for running the code.
@@ -17,9 +17,8 @@ pip install torch torchvision torchaudio
 pip install -r requirements_general.txt
 ```
 ## R packages
-```
-salso
-```
+Install package
+[salso](https://cran.r-project.org/web/packages/salso/index.html).
 
 # What is included?
 
