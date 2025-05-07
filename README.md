@@ -1,7 +1,22 @@
-# sot-gmm
+# sbnpm-sot
 Official implementation for paper: Summarizing Bayesian Nonparametric Mixture Posterior - Sliced Optimal Transport Metrics for Gaussian Mixtures
 
 The code can also be found at https://github.com/khainb/sbnpm-sot. 
+
+Details of the model architecture and experimental results can be found in our papers.
+
+```
+@article{nguyen2024summarizing,
+  title={Summarizing Bayesian Nonparametric Mixture Posterior--Sliced Optimal Transport Metrics for Gaussian Mixtures},
+  author={Nguyen, Khai and Mueller, Peter},
+  journal={arXiv preprint arXiv:2411.14674},
+  year={2024}
+}
+```
+
+Please CITE our paper whenever this repository is used to help produce published results or incorporated into other software.
+
+This implementation is made by [Khai Nguyen](https://khainb.github.io).
 
 # Requirements
 
