@@ -1,6 +1,8 @@
 # sot-gmm
 Official implementation for paper: Summarizing Bayesian Nonparametric Mixture Posterior - Sliced Optimal Transport Metrics for Gaussian Mixtures
 
+The code can also be found at https://github.com/khainb/sbnpm-sot. 
+
 # Requirements
 
 [Python 3.11.4 (with pip)](https://www.python.org/downloads/release/python-3114/)  and [R 4.3.1](https://cran.r-project.org/bin/windows/base/old/4.3.1/) with RStudio were used to produce results, however, they are not strictly required for running the code.
