@@ -8,10 +8,14 @@ Official implementation for paper: Summarizing Bayesian Nonparametric Mixture Po
 ## Python packages
 These packages were used to produce results, however, their mentioned specific version are not strictly required for running the code.
 ```
-pip install -r requirements.txt
 pip install torch==2.5.1 torchvision==0.20.1 torchaudio==2.5.1 --index-url https://download.pytorch.org/whl/cu124
+pip install -r requirements.txt
 ```
-
+If the above versions of packages are not available for your system.
+```
+pip install torch torchvision torchaudio
+pip install -r requirements_general.txt
+```
 ## R packages
 ```
 salso
