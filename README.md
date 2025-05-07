@@ -46,7 +46,10 @@ Code is in the folder [simulation](simulation).
 
 Please update directory path at line 3 in [summarizing_partition_with_salso.R](simulation%2Fsummarizing_partition_with_salso.R) and [evaluate_partition_with_salso.R](simulation%2Fevaluate_partition_with_salso.R).
 
-For evaluation from provided prerun summarization:
+For evaluation from provided saved results:
+
+Download [saved results](https://drive.google.com/drive/folders/1AehJIv3wEuapq2rtbgahj0AkTlhf7ukU?usp=sharing) into [simulation/saved](simulation%2Fsaved).
+
 ```
 cd simulation
 python evaluate_density.py
@@ -86,7 +89,10 @@ Code is in the folder [faithful](faithful).
 
 Please update directory path at line 3 in [summarizing_partition_with_salso.R](faithful%2Fsummarizing_partition_with_salso.R) and [evaluate_partition_with_salso.R](faithful%2Fevaluate_partition_with_salso.R).
 
-For evaluation from provided prerun summarization:
+For evaluation from provided saved results:
+
+Download [saved results](https://drive.google.com/drive/folders/1g3yIMxiXz2gCQpTUOiB6uhBJbhNHqLtt?usp=sharing) into [faithful/saved](faithful%2Fsaved).
+
 ```
 cd simulation
 python evaluate_density.py
